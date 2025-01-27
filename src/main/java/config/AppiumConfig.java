@@ -30,7 +30,7 @@ public class AppiumConfig {
         desiredCapabilities.setCapability("appPackage", "com.telran.ilcarro");
         desiredCapabilities.setCapability( "appActivity", ".SplashActivity");
         desiredCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"Appium");
-        String urlNex5 = "http:localhost:4723/wd/hub";
+        String urlNex5 = "http:localhost:4723/wd/hub"; // путь к нашему эммулятору
         try {
             driver = new AppiumDriver<>(new URL(urlNex5),desiredCapabilities);
         } catch (MalformedURLException e) {

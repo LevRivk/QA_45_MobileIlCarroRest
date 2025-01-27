@@ -14,6 +14,9 @@ public class SearchScreen extends BaseScreen{
     AndroidElement btnRegistration;
     @FindBy(xpath = "//*[@text='Login']")
     AndroidElement btnLogin;
+    @FindBy(xpath = "//*[@text='My Cars']")
+    AndroidElement btnMyCars;
+
 
     public void goToRegistrationScreen(){
        // btnMoreOptions.click();
@@ -22,4 +25,18 @@ public class SearchScreen extends BaseScreen{
         clickWait(btnRegistration,5);
     }
 
+
+    public void goToLoginScreen() {
+        clickWait(btnMoreOptions,5);
+        clickWait(btnLogin,5);
+
+    }
+    public void goToMyCarsScreen() {
+        clickWait(btnMoreOptions,5);
+        clickWait(btnMyCars,5);
+
+    }
+    public boolean validateMessageSuccess(String message){
+        return textInElementPresent(popUpMessageSuccess,message,5);
+    }
 }

@@ -9,11 +9,10 @@ import lombok.ToString;
 @Setter
 @Builder
 @ToString
+public class BookedDto {
 
-public class UserDTO {
-    private String username;
-    private String password;
-    private String firstName;
-    private String lastName;
+    private String email;
+    private String startDate;
+    private String endDate;
 
 }
