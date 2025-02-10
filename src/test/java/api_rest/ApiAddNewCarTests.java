@@ -22,7 +22,7 @@ public class ApiAddNewCarTests extends CarController{
             .fuel("Gas")
             .year("1975")
             .seats(4)
-            .about("best of the best")
+            .about("best of the best car volvo")
             .build();
     login();
     Response response = addUserCars(car,tokenDto.getAccessToken());
